@@ -6,4 +6,3 @@ services:
     plan: starter
     autoDeploy: false
     buildCommand: cd frontend && bun run build
-    startCommand: bun dev
