@@ -5,9 +5,5 @@ services:
     repo: https://github.com/devMorshed/HBD_LUFFY
     plan: starter
     autoDeploy: false
-
-  - name: frontend
     buildCommand: cd frontend && bun run build
-    healthCheckPath: /
-    automaticDeploy:
-      branchPattern: main
+    startCommand: bun dev
